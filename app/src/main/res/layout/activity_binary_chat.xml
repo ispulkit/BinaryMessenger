@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bin_chat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+    <fragment
+        android:name="binary.handlers.BinaryChatMessagesFragment"
+        android:id="@+id/binary_msgs_chat_list_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+        <Button
+            android:id="@+id/send_btn_binary_chat"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_send_black_24dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:id="@+id/msg_ed_binary_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/send_btn_binary_chat"
+            android:layout_toLeftOf="@+id/send_btn_binary_chat" >
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>

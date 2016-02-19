@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="webradic.binarymessenger.MyProfile">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_my_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/binary_logo"
+        android:id="@+id/imgvw_my_profile"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgvw_my_profile"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="20dp"
+        android:id="@+id/textvw_my_profile_name_"
+        android:textSize="25dp"
+        android:text="Name :"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textvw_my_profile_name_"
+        android:layout_below="@+id/imgvw_my_profile"
+        android:singleLine="true"
+        android:paddingLeft="20dp"
+        android:text="Fetching.."
+        android:textSize="25dp"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Change Display Name"
+    android:layout_below="@+id/textvw_my_profile_name_"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:textColor="#ffffff"
+    android:background="@color/colorPrimaryDark"
+    />
+</RelativeLayout>
