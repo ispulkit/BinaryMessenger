@@ -1,0 +1,6 @@
+{
+  "name": "Binarymessenger",
+  "tagline": "Android messenger for basic encrypted messaging",
+  "body": "# BinaryMessenger\r\nAn android project that lets users to chat with minimal password security. \r\nThe project utilizes XMPP (protocol) and Google AppEngine (backend). \r\nCCS (Cloud connection service) over GCM (Google Cloud Messaging) is used to serve as a server and software layer.\r\nThe project has a built in backend using Google Endpoints Android Studio plugin.\r\nA user can simply sign in using Google, set a password, add contacts using Email and chat easily.\r\n\r\n##XMPP\r\nSmack library 4.1 is used to setup an XMPP connection to the cloud.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
